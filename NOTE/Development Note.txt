@@ -1,0 +1,57 @@
+
+SET NAMES utf8mb4;
+
+INSERT INTO `users` (`id`, `name`, `email`, `mobile`, `role_id`, `status`, `total_login`, `file_path`, `email_verified_at`, `password`, `remember_token`, `last_login`, `created_at`, `updated_at`) VALUES
+(1,	'Admin',	'admin@email.com',	'01195336679',	2,	1,	49,	'media/profile/1.png',	NULL,	'$2y$10$ua0AKs8xfMLXaXbHsejwceUucQKDpLRPrJbXSamIVKeMNL/Oppz42',	'WIDTlYxUXsrDg9EFe7SsoUcXr5lHdgzCcvOY64E42Pvb81Gqt0r2ARZth2Zj',	'2023-12-22 17:21:50',	'2023-09-09 08:36:10',	'2023-12-22 17:21:50');
+
+============================================================================================================================
+REQUEST
+============================================================================================================================
+php artisan make:request GalleryCategoryValidation
+
+============================================================================================================================
+TABLE
+============================================================================================================================
+php artisan make:migration create_contact_message_table --create=contact_message
+============================================================================================================================
+CONTROLLER
+============================================================================================================================
+----------------------------------------------------------------------------------------------------------------------------
+php artisan make:controller Frontend/FrontendController --resource
+php artisan make:controller UsersController --resource
+
+============================================================================================================================
+MODEL
+============================================================================================================================
+php artisan make:model Gallery -m
+php artisan make:controller ProductController --resource --model=Product
+
+---------------------------------------------------------------------------------------------------------
+php artisan make:migration create_gallery --create=gallery
+
+============================================================================================================================
+PACKAGE INSTALLATION
+============================================================================================================================
+Intervention Image
+----------------------------------------------------------------------------------------------------------------------------
+https://image.intervention.io/v2/introduction/installation
+
+composer require intervention/image
+
+php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
+
+'providers' => [Intervention\Image\ImageServiceProvider::class,]
+
+'aliases' => ['Image' => Intervention\Image\Facades\Image::class,]
+
+============================================================================================================================
+Laravel localization
+============================================================================================================================
+https://lokalise.com/blog/laravel-localization-step-by-step/
+
+Helper Function : https://makitweb.com/create-helper-function-and-use-it-in-laravel/
+
+Data Table :  https://makitweb.com/add-pagination-using-yajra-datatables-in-laravel/#google_vignette
+
+
+

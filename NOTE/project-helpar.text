@@ -1,0 +1,587 @@
+=========================================================================================================
+LARAVEL ARTISAN COMAND
+=========================================================================================================
+TABLE
+---------------------------------------------------------------------------------------------------------
+php artisan make:migration create_contact_information --create=contact_information
+php artisan make:migration create_add_proparty--create=add_proparty
+php artisan migrate
+
+UPDATE `unit_information` SET `wksp`=1 WHERE (unit_name LIKE '%Wksp%')
+
+php artisan make:migration create_nano_supplier_location_type --create="nano_supplier_location"
+
+php artisan make:migration create_city_location_table
+
+Migrate only one TABLE
+-----------------------
+php artisan migrate:refresh --path=/database/migrations/2021_09_23_135218_create_slide_image.php
+
+MODEL
+---------------------------------------------------------------------------------------------------------
+php artisan make:model Post
+php artisan make:model VideoInformation -m
+
+CONTROLLER
+---------------------------------------------------------------------------------------------------------
+php artisan make:controller Frontend/FrontendController --resource
+php artisan make:controller Backend/Contents/DownloadableConttentsController --resource
+php artisan make:controller Admin/NavigationController --resource
+php artisan make:controller Admin/PermissionController --resource
+
+php artisan make:controller Admin/VideoCategoryController
+php artisan make:controller Backend/GenerateHTMLController
+
+ROUTE
+---------------------------------------------------------------------------------------------------------
+Route::resource('admin-user', 'AdminController');
+
+CLEAR CACHE IN LARAVEL
+---------------------------------------------------------------------------------------------------------
+php artisan cache:clear
+php artisan route:clear
+php artisan config:clear
+php artisan view:clear
+
+composer dump-autoload
+
+=========================================================================================================
+BOOTSTRAP
+=========================================================================================================
+MODAL
+---------------------------------------------------------------------------------------------------------
+<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-outline-primary btn-sm float-right" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus"> NEW ITEM</i></button>
+<a data-toggle="modal" data-target="#editAdmin{{ $sItem->id }}" title="Edit Information"><i class="fa fa-edit fa-lg text-secondary"></i></a>
+<a data-toggle="modal" data-target="#deleteAdmin{{ $sItem->id }}" title="Delete Information"><i class="fa fa-trash-o fa-lg text-danger"></i></a>
+
+Route::resource('/video-category', App\Http\Controllers\Backend\Video\VideoCategoryController::class)->only(['index', 'store', 'update']);
+
+<form method="POST" action="{{ route('nieuws.destroy', [$blog->id]) }}">
+    @method('DELETE')
+    @csrf
+    <button type="submit">Delete</button>
+</form>
+
+<!-- The Create Modal -->
+<div class="modal fade" id="createModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-primary">Create New Menu</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <form method="post" action="" enctype="multipart/form-data">
+        @csrf
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success"><i class="fas fa-check"> Save</i></button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times"> Close</i></button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- User Help Modal Start -->
+<div class="modal fade" id="helpModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title text-primary"><i class="fa fa-bullhorn" aria-hidden="true"></i> How to use it.</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/t0najO37BHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        {{ Form::button('<i class="fa fa-close fa-lg"> Close </i>', ['type' => 'button', 'class' => 'btn btn-warning','data-dismiss'=>'modal'] ) }}
+      </div>
+    </div>
+  </div>
+</div>
+
+BUTTON
+---------------------------------------------------------------------------------------------------------
+<div class="row">
+  <div class="col-12 col-sm-6 col-md-6 col-lg-6 h4"><i class="icon fas fa-sitemap"> MENU LIST</i></div>
+  <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+    <li class="list-inline-item float-right"><button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus"> NEW ITEM</i></button></li>
+    <li class="list-inline-item float-right"><button type="button" class="btn btn-outline-primary btn-sm mr-3" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus"> NEW MENU</i></button></li>
+  </div>
+</div>
+
+TEXT BOX, DROPDOWN, RADIO, CHECKBOX & LABEL
+---------------------------------------------------------------------------------------------------------
+<div class="form-group row">
+  <label class="control-label col-md-3">Name</label>
+  <div class="col-md-8">
+    <input type="text" name="txtName" class="form-control"  placeholder="Enter full name">
+  </div>
+</div>
+
+<label class="col-form-label text-secondary font-weight-bold" for="inputDefault">Menu Name</label>
+
+<select name="cmbCastegoryID" class="form-control" required autofocus>
+  <option value="">Select Category</option>
+  @foreach($qCategorys as $sCategory)
+  <option value="{{ $sCategory->id }}">{{ $sCategory->prca_cat_name_bn }}</option>
+  @endforeach
+</select>
+
+<select name="cmbCastegoryID" class="form-control" required autofocus>
+  @foreach($qCategorys as $sCategory)
+  <option value="{{ $sCategory->id }}" @if($sItem->prsu_cat_id==$sCategory->id) selected @endif>{{ $sCategory->prca_cat_name_bn }}</option>
+  @endforeach
+</select>
+======|Radio|======
+<div class="animated-radio-button">
+  <label><input type="radio" name="rdoStatus" value="3" checked><span class="label-text">Yes </span></label>
+  <label><input type="radio" name="rdoStatus" value="2"><span class="label-text">No </span></label>
+</div>
+Radio Edit
+-----------
+<input type="radio" name="rdoActive" {{ $sItem->active==1?'checked':'' }} value="1"> Yes
+======|Check Box|======
+<div class="animated-checkbox">
+  <label>
+    <input type="checkbox"><span class="label-text">Checkbox</span>
+  </label>
+</div>
+======|Password|======
+<input class="form-control" type="password" id="password" name="password" placeholder="New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}','title'=>'Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+======|Non-breaking Space / Blank Space|=======
+&nbsp;
+
+INSERT/EDIT FORM
+---------------------------------------------------------------------------------------------------------
+<form method="POST" action="{{ url('user-menu') }}" enctype="multipart/form-data">
+  @csrf
+</form>
+
+<form method="POST" action="{{ route('user-menu.update',$sItem->id) }}" enctype="multipart/form-data">
+  @method('PUT')@csrf
+</form>
+
+CREATE HTML 5 VALIDATION
+---------------------------------------------------------------------------------------------------------
+maxlength="5"
+minlength="8"
+required
+autofocus
+pattern="[0-9]{11}"
+pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+<input pattern=".{0}|.{5,10}" required title="Either 0 OR (5 to 10 chars)">
+<input pattern=".{0}|.{8,}"   required title="Either 0 OR (8 chars minimum)">
+
+IMAGE
+------------------------------------------------------------------------------------------------------------
+<input type="file" id="filProfile" name="filProfile" class="form-control" data-max-size="1024" accept=".jpeg, .jpg, .png" onchange="document.getElementById('picture').src = window.URL.createObjectURL(this.files[0])">
+<img src="{{ asset('/medias/default/photo.png')}}" id="picture" alt="your image" width="100" height="100"/>
+===|FOR EDIT|===
+<input type="file" id="filProfile{{ $sItem->id }}" name="filProfile" class="form-control" data-max-size="1024" accept=".jpeg, .jpg, .png" onchange="document.getElementById('picture{{ $sItem->id }}').src = window.URL.createObjectURL(this.files[0])">
+<img src="{{ asset('/medias/default/photo.png')}}" id="picture{{ $sItem->id }}" alt="your image" width="100" height="100"/>
+
+@if(file_exists(public_path().$sItem->big_img_path))
+
+VIDEO
+------------------------------------------------------------------------------------------------------------
+<input type="file" name="pic" accept="video/mp4,video/x-m4v,video/*">
+
+=========================================================================================================
+LARAVEL & PHP CODE
+=========================================================================================================
+INSERT OR UPDATE
+---------------------------------------------------------------------------------------------------------
+DB::table('visitors_count')->updateOrInsert(
+  [
+  'visitor'=>request()->ip(),
+  'created_at'=>date('Y-m-d')
+  ],
+  [
+  'visitor'=>request()->ip(),
+  'confirmed'=>1,
+  'created_at'=>now(),
+  'updated_at'=>now()
+  ]
+);
+
+OrderUpdateModel::updateOrInsert(
+  [
+    'applicant_id' => $sItem->applicant_id,
+    'product_id' => $sItem->product_id,
+  ],
+  [
+    'unit_id' => $sItem->unit_id,
+    'applicant_id' => $sItem->applicant_id,
+    'product_id' => $sItem->product_id,
+    'product_size' => $sItem->product_size,
+    'quantity' => $sItem->quantity,
+    'issue_date' => $sItem->issue_date,
+    'created_at' => date('Y-m-d H:i:s'),
+    'updated_at' => date('Y-m-d H:i:s'),
+  ]
+);
+
+
+GET LAST ID
+---------------------------------------------------------------------------------------------------------
+$iLastID=DB::getPdo()->lastInsertId();
+
+PHP DATE FORMATING
+---------------------------------------------------------------------------------------------------------
+echo date('Y-m-d', strtotime($date));
+
+$item->from_date = date('Y-m-d', strtotime(strtr($request->dFromDate, '/', '-')));
+
+
+PAGINATION
+---------------------------------------------------------------------------------------------------------
+<?php $i = $years->perPage() * ($years->currentPage() -1); ?>
+@foreach($years as $year)
+<tr>
+    <td width="20%">{{ $i }}</td>
+</tr>
+<?php $i++;?>
+@endforeach
+
+->orderBy('users.id', 'desc')->paginate(20);
+
+@if(!empty($qItems))
+ {{ $qItems->appends(['cmbCategoryID'=>$iCategoryID,'cmbSubCategoryID' => $iSubCatID])->links() }}
+@endif
+
+@if(!empty($qItems))
+  {{ $qItems->links() }}
+@endif
+
+// Directly in your blade file
+$posts->links('pagination::bootstrap-4')
+
+SERIAL NO
+---------------------------------------------------------------------------------------------------------
+{{ $loop->index + 1 }}
+
+SELECT
+---------------------------------------------------------------------------------------------------------
+$items = AuthorProfileModel::where('author_id', $id)->first();
+
+VALIDATION
+---------------------------------------------------------------------------------------------------------
+$this->validate($request,[
+    'name' => 'required|max:129',
+    'email' => 'required|email|max:69|unique:users',
+    'password' => 'required|confirmed|min:6',
+    'mobile' => 'required|max:11',
+    'filProfile' => 'image|mimes:jpeg,png,jpg|max:1024',
+]);
+
+$this->validate($request,[
+    'email' => 'required|email|max:69|unique:users,email,'.$id,
+]);
+
+$rules = array(
+    'Email' => 'required_without:mobile',
+    'mobile' => 'required_without:Email',
+);
+
+TABLE
+----------------------------------------------------------------------------------------------------------
+Schema::create('admins', function (Blueprint $table) {
+    $table->bigIncrements('id');
+    $table->string('name',99);
+    $table->string('email', 99)->unique();
+    $table->string('mobile', 11);
+    $table->integer('user_role')->default(0);
+    $table->tinyInteger('status')->default(3);
+    $table->string('profile_img',255)->nullable();
+    $table->string('password',255);
+    $table->boolean('active')->default(1);
+    $table->rememberToken();
+    $table->timestamps();
+});
+
+$request->session()->flash('alert-success', 'Admin User was successful added!');
+
+MESSAGE
+----------------------------------------------------------------------------------------------------------
+<div class="col-md-12 flash-message">
+  @foreach (['danger', 'warning', 'success', 'info','primary'] as $msg)
+    @if(Session::has('alert-' . $msg))
+      <h5 class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></h5>
+    @endif
+  @endforeach
+</div>
+
+@foreach (['danger', 'warning', 'success', 'info','primary'] as $msg)
+  @if(Session::has('alert-' . $msg))
+  <div class="flash-message alert alert-{{ $msg }} alert-dismissible fade show" role="alert">
+    <span>{{ Session::get('alert-' . $msg) }}</span>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  @endif
+@endforeach
+
+@if ($errors->has('cmbCategoryID'))
+  <span class="help-block text-danger">
+   <strong>{{ $errors->first('cmbCategoryID') }}</strong>
+  </span>
+@endif
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".flash-message").delay(5000).fadeOut(500);
+  });
+</script>
+
+/*Message Fadeout CSS Start*/
+.flash-message {-webkit-animation: seconds 1.0s forwards;-webkit-animation-iteration-count: 1;-webkit-animation-delay: 5s;animation: seconds 1.0s forwards;animation-iteration-count: 1;animation-delay: 5s;position: relative;}
+@-webkit-keyframes seconds {
+  0% {opacity: 1;}
+  100% {opacity: 0;left: -9999px;position: absolute;}
+}
+@keyframes seconds {
+  0% {opacity: 1;}
+  100% {opacity: 0;left: -9999px;position: absolute;}
+}
+/*Message Fadeout CSS Close*/
+
+CASCADING DROPDOWN
+----------------------------------------------------------------------------------------------------------
+<!-- JS For Cascading Dropdown Heder Part-->
+<script src='{{ url("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js") }}'></script>
+
+<script type="text/javascript">
+  $("select[name='cmbCategoryID']").change(function(){
+      var cmbCategoryID = $(this).val();
+      var token = $("input[name='_token']").val();
+      $.ajax({
+          url: "<?php echo route('select-sub-category') ?>",
+          method: 'POST',
+          data: {cmbCategoryID:cmbCategoryID, _token:token},
+          success: function(data) {
+            $("select[name='cmbSubCategoryID'").html('');
+            $("select[name='cmbSubCategoryID'").html(data.options);
+          }
+      });
+  });
+</script>
+
+
+======|With Bootstrap Modal|======
+<select class="form-control" name="cmbProduct" id="cmbProduct" required>
+
+</select>
+
+<script type="text/javascript">
+  $.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+  });
+  $(document).ready(function () {
+    $('#category').on('change',function(e) {
+      var cat_id = e.target.value;
+      $.ajax({
+        url:"{{ route('pro') }}",
+        type:"POST",
+        data: {
+          cat_id: cat_id
+        },
+        success:function (data) {
+          $('select[name="cmbProduct"]').empty();
+          $.each(data.products, function(key, value) {
+              $('select[name="cmbProduct"]').append('<option value="'+ key.id +'">'+ value.product_name +'</option>');
+          });
+        }
+      })
+    });
+  });
+</script>
+
+======|Notification Show|======
+Route::get('/new-order', function (Request $request) {return view('layouts.count');});
+Add the blade template => count.blade.php
+<script type="text/javascript">
+     $(document).ready(function(){
+       $("#count").load(<?php route("new-order");?>);
+
+       setInterval(function(){
+        $("#count").load(<?php route("new-order");?>)
+       }, 10000);
+     });
+</script>
+
+Route::get('new-order', 'Pharmacy\MedicineRequestController@newOrder')->name('new-order');
+Add the blade template => itemlist.blade.php
+<script type="text/javascript">
+        $(window).load(function(){
+            update()
+            setInterval(function(){
+                update()
+            }, 5000)
+        })
+
+        function update(){
+          $.ajax({
+            url: "<?php echo route('new-order') ?>",
+            type: 'GET',
+            success: function(data){
+                console.log(data)
+                $data = $(data); // the HTML content that controller has produced
+                $('#count').hide().html($data).fadeIn();
+              }
+          })
+        }
+ </script>
+
+VALI ADMIN DATE
+------------------------------------------------------------------------------------------------------------
+<script type="text/javascript" src="{{asset('js/plugins/bootstrap-datepicker.min.js')}}"></script>
+
+<script type="text/javascript">
+  $('#demoDate').datepicker({
+    format: "dd/mm/yyyy",
+    autoclose: true,
+    todayHighlight: true
+  });
+</script>
+
+IMAGE UPLOAD AND RESIZE
+------------------------------------------------------------------------------------------------------------
+$sDirectory=date('Y');$sDirectoryName="";
+if($request->hasFile('filProfile')) {
+  $sImage       = $request->file('filProfile');
+  $sFilename    = time().'-'.$sImage->getClientOriginalName();
+  $sImageResize = Image::make($sImage->getRealPath());
+  $sImageResize->resize(100, 100);
+  $sDirectoryName = $sDirectory.'/profile/'.$sFilename;
+  $sImageResize->save('medias/'.$sDirectory.'/profile/'.$sFilename);
+  $item->profile_img = $sDirectoryName;
+}
+
+IMAGE & DATA DELETE
+------------------------------------------------------------------------------------------------------------
+public function destroy(Request $request, $id)
+{
+    if(!empty($request->oldFilProfile)){
+      if(file_exists(public_path('medias/'.$request->oldFilProfile))){
+        unlink(public_path('medias/'.$request->oldFilProfile));
+        Admin::where('id',$id)->delete();
+        $request->session()->flash('alert-danger', 'Information has been deleted successfully.');
+        return redirect('/admin-user');
+      }
+      else{
+        $request->session()->flash('alert-info', 'Sorry there have no file for delete. Please contact your webmaster.');
+        return redirect('/admin-user');
+      }
+    }
+    else{
+      $request->session()->flash('alert-info', 'Sorry there have no file name for delete. Please contact your webmaster.');
+      return redirect('/admin-user');
+    }
+}
+
+FILE EXISTS OR NOT
+------------------------------------------------------------------------------------------------------------
+if (!file_exists(Storage::path($pathToDir))) {
+  Storage::makeDirectory('path to directory', 0775, true);
+    // or any code
+  }
+
+Compare two different columns from one table in laravel query builder
+------------------------------------------------------------------------------------------------------------
+$qItems = DB::table('product_information')->whereColumn('stock','<','anxious_amount')
+
+
+Youtube VIDEO
+-----------------------------------------------------------------------------------------------------------
+<!-- thumbnail -->
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/mqdefault.jpg
+
+<!-- Others -->
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/default.jpg
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/0.jpg
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/1.jpg
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/2.jpg
+https://img.youtube.com/vi/<insert-youtube-video-id-here>/3.jpg
+
+-----------------------------------------------------------------------------------------------------------
+PDF REPORT
+-----------------------------------------------------------------------------------------------------------
+public function unitStock(Request $request)
+    {
+        if(!empty($request->units)){$aUnit = implode(',', $request->units);$sUnit=$request->units;}
+        elseif(empty($request->units)){$aUnit = 0;$sUnit="";}
+
+        $qItem = DB::table('products as prod')
+        ->leftJoin('products_group as prgr', 'products.group', '=', 'prgr.id')
+        ->leftJoin('current_stock as cust','prod.id','=','cust.item_id')
+        ->select('prod.*','cust.receive_date',
+        DB::raw('(SELECT SUM(current_stock.quantity) FROM current_stock WHERE item_id=prod.id AND unit_id IN ('.$aUnit.')) as stockQuantity'),
+        DB::raw('(SELECT SUM(order_details.quantity) FROM order_details WHERE product_id=prod.id AND unit_id IN ('.$aUnit.')) as demand'),
+        DB::raw('(SELECT SUM(order_details.serviceable) FROM order_details WHERE product_id=prod.id AND unit_id IN ('.$aUnit.')) as servicable'),
+        DB::raw('(SELECT SUM(order_details.partial) FROM order_details WHERE product_id=prod.id AND unit_id IN ('.$aUnit.')) as pws'));
+        if(!empty($request->product)){$qItem->where('prod.id',$request->product);}
+        $qItems=$qItem->whereIn('cust.unit_id', $request->units)->groupBy('prgr.pro_name','stockQuantity')->get();
+        $qUnits = DB::table('units')->select('unit_name')->whereIn('id',$request->units)->where('active', 3)->get();
+
+        $pdf = PDF::loadView('reports.unit-stock',compact('qItems','qUnits'));
+
+        return $pdf->stream('unit-stock.pdf',array('Attachment'=>true));
+    }
+    
+    
+    
+//Summary Report Data
+      $qItems = DB::table('products as prod')
+      ->leftJoin('order_details_archive as orde','prod.id','=','orde.product_id')
+      ->leftJoin('products_group as prgr', 'prod.group', '=', 'prgr.id')
+      ->where('orde.unit_id', $iUnitId)->where('prod.active',3)
+      ->where('orde.board_ref_no',$iBoardID)
+      ->select('prod.id','prod.pro_name','prod.unit_measurement',
+      DB::raw('SUM(orde.quantity) as quantity'),
+      DB::raw('SUM(orde.serviceable) as serviceable'),
+      DB::raw('SUM(orde.partial) as partial'),
+      DB::raw('SUM(orde.lost) as lost'))
+      ->groupBy('prgr.pro_name','prod.unit_measurement')->get();
+
+
+      if($type==1)
+      {
+          $pdf = PDF::loadView('reports.indivisual-report-archive',
+              [],
+              ['qApplicants' => $qApplicants, 'sUnitName' => $sUnitName, 'qProducts' => $qProducts, 'qQuantity' => $qQuantity, 'qTotal' => $qTotal, 'iUnitId' => $iUnitId, 'iBoardID' => $iBoardID],
+              //['format' => 'A4-L','orientation' => 'L']
+              ['format' => 'Legal-L','orientation' => 'L']
+            );
+          return $pdf->stream('indivisual-report-archive.pdf',array('Attachment'=>true));
+      }
+      elseif($type==2)
+      {
+          //$pdf = PDF::loadView('reports.summary-report',compact('sUnitName','qItems','qReportnfo'));
+          //return $pdf->stream('summary-report.pdf',array('Attachment'=>true));
+          return view('reports.summary-report-archive', compact('sUnitName','qItems','qReportnfo','sBoardName'));
+      }
+
+
+
+===========================================================================================================
+Security Issue
+===========================================================================================================
+Q1. Cookies without Secure flag set
+    (https://stackoverflow.com/questions/47299809/how-to-set-secure-flag-on-cookies-in-laravel-5-4)
+    #In laravel you need to alter the config/session.php configuration,set the secure flag to true
+    'secure' => true,
+    'secure' => env( 'SESSION_SECURE_COOKIE', true ),
+
+Q2. Insecure Referrer Policy
+    (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy)
+    <meta name="referrer" content="origin">
+
+Q3. Content Security Policy (CSP)
+    (https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
