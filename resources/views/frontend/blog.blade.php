@@ -1,7 +1,7 @@
 @extends('frontend/front-layouts.front-app')
-@section('title'){{ $sMetaInfo->meta_eng_title??'' }}@endsection
-@section('keyword'){{ $sMetaInfo->cat_meta_keyword??'' }}@endsection
-@section('description'){{ $sMetaInfo->cat_meta_description??'' }}@endsection
+@section('title')Analytic Saiful Blogs Page @endsection
+@section('keyword'){{$sMetaInfo->cat_meta_keyword??''}}@endsection
+@section('description'){{$sMetaInfo->cat_meta_description??''}}@endsection
 @section('content')
 
 <!-- Breadcrumb Start -->
@@ -27,7 +27,7 @@
                 @foreach($qItems as $sItem)
                 <div class="row single-blog mb-3">
                     <div class="col-sm-5">
-                        <img class="img-fluid" src="{{ asset($sItem->small_img_path) }}" alt="{{ $sItem->eng_title }}" title="{{ $sItem->eng_title }}" loading="lazy">
+                        <img class="img-fluid" src="{{ $sItem->small_img_path }}" alt="{{ $sItem->eng_title }}" title="{{ $sItem->eng_title }}" loading="lazy" width="100%">
                     </div>
                     <div class="col-sm-7">
                         <div class="pt-2">
@@ -69,7 +69,7 @@
                     @foreach($qPopulars as $sPopular)
                     <div class="col mb-3">
                         <a href="{{ url('blog-details',$sPopular->en_slug) }}" title="{{ $sPopular->eng_title }}">
-                        <img class="img-fluid" src="{{ asset($sPopular->small_img_path) }}" alt="{{ $sPopular->eng_title }}" title="{{ $sPopular->eng_title }}" loading="lazy">
+                        <img class="img-fluid" src="{{ $sPopular->small_img_path }}" alt="{{ $sPopular->eng_title }}" title="{{ $sPopular->eng_title }}" loading="lazy" width="100%">
                         <h6>{{ $sPopular->eng_title }}</h6>
                         </a>
                     </div>

@@ -6,13 +6,14 @@
     <title>@yield('title')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="title" content="@yield('title')"/>
-    <meta name="keyword" content="@yield('keyword')"/>
     <meta name="description" content="@yield('description')"/>
+    <meta name="keywords" content="@yield('keyword')"/>
     <meta http-equiv="content-type" content="text/html">
     <meta name="author" content="Mohammad Saiful Islam">
     <meta name="designer" content="Mohammad Saiful Islam">
     <meta name="publisher" content="Mohammad Saiful Islam">
-    <meta name=”robots” content=”index,follow”>
+    <meta name="robots" content="all">
+    <link rel="canonical" href="{{Request::url()}}">
     <meta name="revisit-after" content="10 days">
     <meta name="distribution" content="global">
     <meta property="og:type" content="website"/>

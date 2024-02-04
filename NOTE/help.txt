@@ -8,7 +8,8 @@ git commit -m "Upload existing project"
 
 git branch -M main
 
-git remote add origin git@github.com:saifulprog/analyticsaiful.git
+git remote add origin git@github.com:saifulprog/analyticsaiful_portfolio.git
 
 git push -u -f origin main
+
 

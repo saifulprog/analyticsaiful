@@ -26,7 +26,7 @@
             <div class="col-sm-9">
                 <div class="row mb-3">
                     
-                    <img class="img-fluid" src="{{ asset($sItem->big_img_path) }}" alt="What is the best for you google search ads or display  ads" title="What is the best for you google search ads or display  ads" loading="lazy">
+                    <img class="img-fluid" src="{{ $sItem->big_img_path }}" alt="{{ $sItem->eng_title }}" title="{{ $sItem->eng_title }}" loading="lazy">
                     
                     <div class="blog-card-body pt-3">
                         <h1 class="blog-title">{{ $sItem->eng_title }}</h1>
@@ -61,7 +61,7 @@
                     @foreach($qPopulars as $sPopular)
                     <div class="col mb-3">
                         <a href="{{ url('blog-details',$sPopular->en_slug) }}" title="{{ $sPopular->eng_title }}">
-                        <img class="img-fluid" src="{{ asset($sPopular->small_img_path) }}" alt="{{ $sPopular->eng_title }}" title="{{ $sPopular->eng_title }}" loading="lazy">
+                        <img class="img-fluid" src="{{ asset($sPopular->small_img_path) }}" alt="{{ $sPopular->eng_title }}" title="{{ $sPopular->eng_title }}" loading="lazy" width="100%">
                         <h6>{{ $sPopular->eng_title }}</h6>
                         </a>
                     </div>

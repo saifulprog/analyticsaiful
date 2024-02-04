@@ -1,7 +1,7 @@
 @extends('frontend/front-layouts.front-app')
-@section('title') Best Web Analytics Expert in Bangladesh - Mohammad Saiful Islam @endsection
-@section('keyword') Mohammad Saiful Islam, Web Analytics Expert, Best Web Analytics Expert, Web Analytics Expert in Bangladesh, Digital Marketing and Web Developing Service in bangladesh @endsection
-@section('description') Boost your business performance by using my expertise in web development and digital marketing, offering 13+ years of experience in web development and data driving business growth &amp; success. @endsection
+@section('title')Best Web Analytics Expert in Bangladesh - Mohammad Saiful Islam @endsection
+@section('keyword')Analytic Saiful, Mohammad Saiful Islam, Web Analytics Expert, Best Web Analytics Expert, Web Analytics Expert in Bangladesh, Email Marketing Expart, Klaviyo Expart, Mailchimp Expart, K Digital Marketing and Web Developing Service in bangladesh, Facebook Marketing Expart, Instragram Marketing Expart, Youtube Ads Marketing, Organic SEO Expert @endsection
+@section('description')Boost your business performance by using my expertise in web development and digital marketing, offering 13+ years of experience in web development and data driving business growth &amp; success.@endsection
 
 @section('content')
 <!-- Header Start -->
@@ -13,12 +13,7 @@
                 <h2 class="display-3 mb-3">Mohammad Saiful Islam</h2>
                 <h2 class="typed-text-output d-inline"></h2>
                 <div class="typed-text d-none">
-                    <h1>Passionate Full Stack Web Developer, 
-                        Expert in Google Ads & Web Analytics, 
-                        Transforming Businesses with Data-Driven Solutions,  
-                        Digital Marketing Strategist Making,  
-                        Organic SEO Expart
-                    </h1>
+                    <h1>I'm a web developer and marketer who uses data and SEO to grow businesses</h1>
                 </div>
                 <p>Are you ready to take your business to the next level? Do you want to increase your sales and profits while saving money on your ads? If yes, you are in the right place. I can boost your business performance by using my expertise in web development and digital marketing. Contact me today and let's get started.</p>
                 <div class="d-flex align-items-center pt-5">
@@ -31,7 +26,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid" src="{{ asset('front-assets/img/Who-is-the-best-web-analytics-expert-in-Bangladesh.png') }}" alt="Mohammad Saiful Islam" title="Mohammad Saiful Islam">
+                <img class="img-fluid" src="{{ asset('front-assets/img/best-web-analytics-expert-in-Bangladesh.webp') }}" alt="Best Web Analytics Expert in Bangladesh" title="Best Web Analytics Expert in Bangladesh">
             </div>
         </div>
     </div>
@@ -81,10 +76,10 @@
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="row g-3 mb-4">
                     <div class="col-sm-6">
-                        <img class="img-fluid rounded" src="{{ asset('front-assets/img/Business-deal.png') }}" alt="Business Deal" title="Business Deal" loading="lazy">
+                        <img class="img-fluid rounded" src="{{ asset('front-assets/img/Business-deal.webp') }}" alt="Business Deal" title="Business Deal" loading="lazy">
                     </div>
                     <div class="col-sm-6">
-                        <img class="img-fluid rounded" src="{{ asset('front-assets/img/Business-Grouth.png') }}" alt="Business Grouth" titile="Business Grouth" loading="lazy">
+                        <img class="img-fluid rounded" src="{{ asset('front-assets/img/Business-Grouth.webp') }}" alt="Business Grouth" titile="Business Grouth" loading="lazy">
                     </div>
                 </div>
                 <div class="mb-3">
@@ -199,55 +194,55 @@
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="col-lg-4 col-md-6 portfolio-item first">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/bdhomeland.png') }}" alt="bdhomeland" title="bdhomeland" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/bdhomeland.webp') }}" alt="bdhomeland" title="bdhomeland" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/bdhomeland-2.png') }}" title="bdhomeland" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/bdhomeland-2.webp') }}" title="bdhomeland" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="http://bdhomeland.com" title="bdhomeland.com" target="_blank" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item second">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/fragdeal.png') }}" alt="fragdeal" title="fragdeal" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/fragdeal.webp') }}" alt="fragdeal" title="fragdeal" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/fragdeal-2.png') }}" title="fragdeal" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/fragdeal-2.webp') }}" title="fragdeal" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://fragdeal.com" title="fragdeal.com" target="_blank" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item first">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/vortibd.png') }}" alt="vortibd" title="vortibd" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/vortibd.webp') }}" alt="vortibd" title="vortibd" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/vortibd-2.png') }}" title="vortibd" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/vortibd-2.webp') }}" title="vortibd" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://vortibd.com" title="vortibd.com" target="_blank" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item second">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Google/google-ads.png') }}" alt="google ads" title="google ads" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Google/google-ads.webp') }}" alt="google ads" title="google ads" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Google/google-ads.png') }}" title="google-ads" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#" title="google-ads.png" rel="nofollow"><i class="fa fa-link"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Google/google-ads.webp') }}" title="google-ads" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#" title="google-ads.webp" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item first">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Google/google-ga4.png') }}" alt="google ga4" title="google ga4" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Google/google-ga4.webp') }}" alt="google ga4" title="google ga4" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Google/google-ga4.png') }}"  title="google-ga4" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#" title="google-ga4.png" rel="nofollow"><i class="fa fa-link"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Google/google-ga4.webp') }}"  title="google-ga4" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#" title="google-ga4.webp" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item second">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Facebook/facebook-ads.png') }}" alt="facebook ads" title="facebook ads" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Facebook/facebook-ads.webp') }}" alt="facebook ads" title="facebook ads" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Facebook/facebook-ads.png') }}" title="facebook-ads" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#" title="facebook-ads.png" rel="nofollow"><i class="fa fa-link"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Facebook/facebook-ads.webp') }}" title="facebook-ads" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#" title="facebook-ads.webp" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -271,10 +266,10 @@
 
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <a href="#" title="What is the best for you google search ads or display  ads">
+                <a href="{{ url('blog-details/what-is-the-best-for-you-google-search-ads-or-display-ads') }}" title="What is the best for you google search ads or display  ads">
                 <div class="single-blog">
                    <div class="thumb">
-                      <img class="img-fluid" src="{{ asset('https://drive.google.com/uc?export=view&id=1uOvZORrAtELvFlHtDk60oom8WLrU-r1k') }}" alt="What is the best for you google search ads or display  ads" title="What is the best for you google search ads or display  ads" loading="lazy" width="100%">
+                      <img class="img-fluid" src="https://drive.google.com/thumbnail?id=1uOvZORrAtELvFlHtDk60oom8WLrU-r1k" alt="What is the best for you google search ads or display  ads" title="What is the best for you google search ads or display  ads" loading="lazy" width="100%">
                    </div>
                    <div class="blog-card-body">
                       <h5 class="h5">What is the best for you google search ads or display  ads</h5>
@@ -285,10 +280,10 @@
              </div>
 
              <div class="col-lg-4 col-md-6 col-sm-12">
-                <a href="#" title="How do I create a GMB and why is it so important for local SEO?">
+                <a href="{{ url('blog-details/how-do-i-create-a-gmb-and-why-is-it-so-important-for-local-seo') }}" title="How do I create a GMB and why is it so important for local SEO?">
                 <div class="single-blog">
                    <div class="thumb">
-                      <img class="img-fluid" src="{{ asset('https://drive.google.com/uc?export=view&id=1FYO5teqqNoAlTzVrsigPY68RiN_ckqsw') }}" alt="How do I create a GMB and why is it so important for local SEO" title="How do I create a GMB and why is it so important for local SEO" loading="lazy" width="100%">
+                      <img class="img-fluid" src="https://drive.google.com/thumbnail?id=1FYO5teqqNoAlTzVrsigPY68RiN_ckqsw" alt="How do I create a GMB and why is it so important for local SEO" title="How do I create a GMB and why is it so important for local SEO" loading="lazy" width="100%">
                    </div>
                    <div class="blog-card-body">
                       <h5 class="h5">How do I create a GMB and why is it so important for local SEO?</h5>
@@ -299,10 +294,10 @@
              </div>
 
              <div class="col-lg-4 col-md-6 col-sm-12">
-                <a href="#">
+                <a href="{{ url('blog-details/what-to-do-about-back-and-shoulder-pain-in-digital-workers') }}" title="What to do about back and shoulder pain in digital workers">
                 <div class="single-blog" title="What to do about back and shoulder pain in digital workers">
                    <div class="thumb">
-                      <img class="img-fluid" src="{{ asset('https://drive.google.com/uc?export=view&id=1KwPTyZHMHdVRoL5CcVs5T1FuiuyzrEAx') }}" alt="What to do about back and shoulder pain in digital workers" title="What to do about back and shoulder pain in digital workers" loading="lazy" width="100%">
+                      <img class="img-fluid" src="https://drive.google.com/thumbnail?id=1KwPTyZHMHdVRoL5CcVs5T1FuiuyzrEAx" alt="What to do about back and shoulder pain in digital workers" title="What to do about back and shoulder pain in digital workers" loading="lazy" width="100%">
                    </div>
                    <div class="blog-card-body">
                       <h5 class="h5">What to do about back and shoulder pain in digital workers</h5>
@@ -410,12 +405,12 @@
                 <p class="mb-2">Follow me:</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-square btn-primary me-2" href="https://github.com/saifulprog" title="Mohammad Saiful Islam GitHub Account" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/php-laravel-full-stack-developer-and-web-analytics-expert" title="Mohammad Saiful Islam LinkedIn Account" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/saiful.WebDeveloper.and.WebAnalyst/" title="Mohammad Saiful Islam Facebook Account" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-instagram"></i></i></a>
-                    <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-telegram-plane"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/analyticsaiful" title="Mohammad Saiful Islam LinkedIn Account" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/analyticsaiful" title="Mohammad Saiful Islam Facebook Account" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    {{-- <a class="btn btn-square btn-primary me-2" href="" target="_blank"><i class="fab fa-instagram"></i></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="" target="_blank"><i class="fab fa-telegram-plane"></i></a> --}}
                 </div>
             </div>
 

@@ -1,7 +1,7 @@
 @extends('frontend/front-layouts.front-app')
-@section('title') Analytic Saiful Works @endsection
-@section('keyword') Analytic Saiful Works @endsection
-@section('description') Analytic Saiful Works @endsection
+@section('title') Analytic Saiful Portfolio Works @endsection
+@section('keyword') Analytic Saiful Web Development Portfolio, SEO Portfolio, Google Ads Portfolio, Facebook Portfolio, GA4 Portfolio @endsection
+@section('description') Analytic Saiful Portfolio Works @endsection
 @section('content')
 
 <!-- Breadcrumb Start -->
@@ -37,54 +37,54 @@
         <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
             <div class="col-lg-4 col-md-6 portfolio-item first">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/bdhomeland.png') }}" alt="bdhomeland" title="bdhomeland" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/bdhomeland.webp') }}" alt="bdhomeland" title="bdhomeland" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/bdhomeland-2.png') }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/bdhomeland-2.webp') }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="http://bdhomeland.com" target="_blank" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item second">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/fragdeal.png') }}" alt="fragdeal" title="fragdeal" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/fragdeal.webp') }}" alt="fragdeal" title="fragdeal" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ ('front-assets/portfolio/Development/fragdeal-2.png') }}" title="fragdeal" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ ('front-assets/portfolio/Development/fragdeal-2.webp') }}" title="fragdeal" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://fragdeal.com" target="_blank" title="fragdeal" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item first">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/vortibd.png') }}" alt="vortibd" title="vortibd" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Development/vortibd.webp') }}" alt="vortibd" title="vortibd" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/vortibd-2.png') }}" title="vortibd" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Development/vortibd-2.webp') }}" title="vortibd" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://vortibd.com/" title="vortibd" target="_blank" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item second">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Google/google-ads.png') }}" alt="google ads" title="google ads" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Google/google-ads.webp') }}" alt="google ads" title="google ads" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Google/google-ads.png') }}" title="google ads" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Google/google-ads.webp') }}" title="google ads" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#" title="google ads" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item first">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Google/google-ga4.png') }}" alt="google ga4" title="google ga4" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Google/google-ga4.webp') }}" alt="google ga4" title="google ga4" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Google/google-ga4.png') }}" title="google ga4" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Google/google-ga4.webp') }}" title="google ga4" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#" title="google ga4" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 portfolio-item second">
                 <div class="portfolio-img rounded overflow-hidden">
-                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Facebook/facebook-ads.png') }}" alt="facebook ads" title="facebook ads" loading="lazy">
+                    <img class="img-fluid" src="{{ asset('front-assets/portfolio/Facebook/facebook-ads.webp') }}" alt="facebook ads" title="facebook ads" loading="lazy">
                     <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Facebook/facebook-ads.png') }}" data-lightbox="portfolio" title="facebook ads"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="{{ asset('front-assets/portfolio/Facebook/facebook-ads.webp') }}" data-lightbox="portfolio" title="facebook ads"><i class="fa fa-eye"></i></a>
                         <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#" title="facebook ads" rel="nofollow"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
