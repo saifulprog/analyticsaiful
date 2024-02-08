@@ -12,7 +12,7 @@
     <title>{{ __('Reset Password') }}</title>
        
     <!-- Font Awesome-->
-    @includeIf('layouts.partials.css')
+    @includeIf('backend.layouts.partials.css')
   </head>
   <body>
 <section>

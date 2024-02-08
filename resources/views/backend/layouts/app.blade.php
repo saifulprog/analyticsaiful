@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     
     <!-- Font Awesome-->
-    @includeIf('layouts.partials.css')
+    @includeIf('backend.layouts.partials.css')
   </head>
   <body>
     <!-- Loader starts-->
@@ -30,25 +30,25 @@
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-sidebar" id="pageWrapper">
       <!-- Page Header Start-->
-      @includeIf('layouts.partials.header')
+      @includeIf('backend.layouts.partials.header')
       <!-- Page Header Ends -->
       <!-- Page Body Start-->
       <div class="page-body-wrapper sidebar-icon">
         <!-- Page Sidebar Start-->
-        @includeIf('layouts.partials.sidebar')
+        @includeIf('backend.layouts.partials.sidebar')
         <!-- Page Sidebar Ends-->
         <div class="page-body">
-          @includeIf('layouts.partials.breadcrumb')  
-          @includeIf('layouts.partials.alert-message')  
+          @includeIf('backend.layouts.partials.breadcrumb')  
+          @includeIf('backend.layouts.partials.alert-message')  
           <!-- Container-fluid starts-->
           @yield('content')
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->
-        @includeIf('layouts.partials.footer')
+        @includeIf('backend.layouts.partials.footer')
       </div>
     </div>
     <!-- latest jquery-->
-    @includeIf('layouts.partials.js')
+    @includeIf('backend.layouts.partials.js')
   </body>
 </html>

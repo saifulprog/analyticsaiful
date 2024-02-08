@@ -50,7 +50,7 @@ class ContentValidation extends FormRequest
                 ];
 
                 if(!empty($this->input('txtBngTitle'))){
-                    $rules = ['txtBngTitle' => 'string|max:120|unique:contents,bng_title',];
+                    $rules = ['txtBngTitle' => ['string','max:120','unique:contents','bng_title'],];
                 }elseif(!empty($this->input('txtEngBrief'))){
                     $rules = ['txtEngBrief' => ['string','max:255'],];
                 }elseif(!empty($this->input('txtBngBrief'))){

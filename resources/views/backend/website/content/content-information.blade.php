@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('backend.layouts.app')
 @section('title') Content Information @endsection
 @section('breadcrumb') Website / Content Information @endsection
 @section('content')
@@ -13,11 +13,13 @@
         <div class="card-body">
 
             <div class="card-block row">
-                <div class="col">
-                    <button type="button" class="btn btn-outline-warning mb-1 pull-right" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <div class="col-sm-10">
+                    <button type="button" class="btn btn-outline-warning mb-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <i class="fa fa-search-plus"> Search</i>
                     </button>
+                </div>
 
+                <div class="col-sm-2">
                     @permission('content-information-create')
                     <button type="button" class="btn btn-outline-primary mb-1 pull-right" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRights" aria-controls="offcanvasRights"><i class="fa fa-plus"></i> Add New</button>
                     @endpermission

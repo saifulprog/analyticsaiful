@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('backend.layouts.app')
 @section('title') Content Category @endsection
 @section('breadcrumb') Website / Content Category @endsection
 @section('content')

@@ -12,7 +12,7 @@
     <title>Login</title>
        
     <!-- Font Awesome-->
-    @includeIf('layouts.partials.css')
+    @includeIf('backend.layouts.partials.css')
   </head>
   <body>
 <section>
@@ -65,16 +65,16 @@
                         <div class="form-group">
                             <ul class="login-social">
                                 <li>
-                                    <a href="https://www.linkedin.com/login" target="_blank"><i data-feather="linkedin"></i></a>
+                                    <a href="" target="_blank"><i data-feather="linkedin"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/login" target="_blank"><i data-feather="twitter"></i></a>
+                                    <a href="" target="_blank"><i data-feather="twitter"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/login" target="_blank"><i data-feather="facebook"></i></a>
+                                    <a href="" target="_blank"><i data-feather="facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/login" target="_blank"><i data-feather="instagram"> </i></a>
+                                    <a href="" target="_blank"><i data-feather="instagram"> </i></a>
                                 </li>
                             </ul>
                         </div>

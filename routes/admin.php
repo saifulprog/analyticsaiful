@@ -20,3 +20,10 @@ Route::resource('/content-information', App\Http\Controllers\Backend\Website\Con
 Route::resource('/gallery-category', App\Http\Controllers\Backend\Gallery\GalleryCategoryController::class)->only(['index','store','update']);
 Route::resource('/gallery', App\Http\Controllers\Backend\Gallery\GalleryController::class)->only(['index','show','store','destroy']);
 Route::post('/google-image-id-update/{id}', [App\Http\Controllers\Backend\Website\ContentsController::class, 'googleIdUpdate']);
+// Marketing
+Route::resource('/marketing-settings', App\Http\Controllers\Backend\Marketing\MarketingSettingsController::class)->only(['index','store']);
+Route::resource('/targeted-audience', App\Http\Controllers\Backend\Marketing\TargetedAudienceController::class)->only(['index','store','update']);
+Route::resource('/message-template', App\Http\Controllers\Backend\Marketing\MessageController::class)->only(['index','store','update']);
+
+// Cascading Dropdown
+Route::post('api/fetch-cities', [App\Http\Controllers\Backend\Marketing\TargetedAudienceController::class, 'fetchCity']);

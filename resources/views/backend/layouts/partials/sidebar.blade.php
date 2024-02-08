@@ -58,16 +58,16 @@
                         </ul>
                     </li>
 
-                    {{-- <li class="dropdown">
-                        <a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="airplay"></i><span>Message</span></a>
+                    <li class="dropdown">
+                        <a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="airplay"></i><span>Marketing</span></a>
                         <ul class="nav-submenu menu-content">
-                            <li><a href="" class="">Email</a></li>
-                            <li><a href="" class="">SMS</a></li>
-                            <li><a href="" class="">Marketing</a></li>
+                            <li><a href="{{ route('marketing-settings.index') }}" class="">Settings</a></li>
+                            <li><a href="{{ route('targeted-audience.index') }}" class="">Targeted Audience</a></li>
+                            <li><a href="{{ route('message-template.index') }}" class="">Message Template</a></li>
                         </ul>
                     </li>
 
-                    <li class="dropdown">
+                    {{-- <li class="dropdown">
                         <a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="airplay"></i><span>Other</span></a>
                         <ul class="nav-submenu menu-content">
                             <li><a href="" class="">Bill</a></li>

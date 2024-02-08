@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('backend.layouts.app')
 @section('title') Gallery Category @endsection
 @section('breadcrumb') Website / Gallery / Gallery Category @endsection
 @section('content')

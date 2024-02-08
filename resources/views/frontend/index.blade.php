@@ -116,13 +116,14 @@
                         <i class="fa fa-code fa-2x text-dark"></i>
                     </div>
                     <div class="ms-sm-4">
-                        <h4 class="mb-3">Web Design and Web Development</h4>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>PHP, Laravelm, MySql, MongoDB, VueJs, Jquery</p>
+                        <h4 class="mb-3">Web Development & Organic SEO</h4>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>PHP, Laravel, MySql, MongoDB, VueJs, Jquery</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Custom Website Design & Development </p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Wordpress, Woocommerce, Shopify</p>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Bug Fixing & Maintenance</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>eCommerce Application Development</p>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>eCommerce Planing & Consultancy</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>SEO Audits, Technical SEO, Local & Youtube SEO </p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>On-Page SEO & Off-Page SEO</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Keywords Research & Competitor Analysis</p>
                     </div>
                 </div>
             </div>
@@ -133,11 +134,13 @@
                     </div>
                     <div class="ms-sm-4">
                         <h4 class="mb-3">Web Analytics & Server Side Tracking</h4>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Google Analytics 4- Enhanced Ecommerce Tracking</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Google Analytics 4, Enhanced E-commerce Tracking</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>GA4 Migrations & Google Tag Manager</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Custom Event Conversion & Attribution Tracking</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Serverside Tracking & Cross Domain Tracking</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>GA4/GTM Audits & Complete Data Analysis </p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>GA4/GTM Audits & Complete Data Analysis </p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Retargeting Audience Setup </p>
                     </div>
                 </div>
             </div>
@@ -147,10 +150,11 @@
                         <i class="fab fa-google fa-2x text-dark"></i>
                     </div>
                     <div class="ms-sm-4">
-                        <h4 class="mb-3">Google, Facebook, Instragram Ads</h4>
+                        <h4 class="mb-3">Social Media Marketing</h4>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Google, Facebook & Instragram Ads Management</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Facebook Pixel Setup</p>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Search/Display/Shopping Ad Setup & Management</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Competitor Analysis & Keyword Research</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Search,Display,Video,Shopping Ad Setup</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Ads Dynamic Re-marketing Setup</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Funnel Setup and Visualizations</p>
                         <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Ads Account Audit and Optimization</p>
@@ -160,16 +164,17 @@
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                     <div class="bg-icon flex-shrink-0 mb-3">
-                        <i class="fas fa-search-location fa-2x text-dark"></i>
+                        <i class="fas fa-envelope fa-2x text-dark"></i>
                     </div>
                     <div class="ms-sm-4">
-                        <h4 class="mb-3">Organic SEO</h4>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>SEO Audits</p>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Technical SEO</p>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>On-Page SEO</p>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Off-Page SEO</p>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Local & Youtube SEO</p>
-                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Keywords Research & Competitor Analysis</p>
+                        <h4 class="mb-3">Email Marketing</h4>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>MailChimp & Klaviyo Campaign & Flow Setup</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Custom & Responsive Drag & Drop Email Template</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Email Template Design By HTML5, CSS3, Canva</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Landing Page Design, Sign Up Pop UpForm Design</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Shopify & WordPress Integration</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>Lead Generation & Cart Abondonment</p>
+                        <p class="mb-1"><i class="far fa-check-circle text-primary me-3"></i>A/B testing</p>
                     </div>
                 </div>
             </div>

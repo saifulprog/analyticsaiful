@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('backend.layouts.app')
 @section('title') User Information @endsection
 @section('breadcrumb') General Setting / User Information @endsection
 @section('content')

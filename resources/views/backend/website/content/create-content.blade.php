@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('backend.layouts.app')
 @section('title') Content Information @endsection
 @section('breadcrumb') Website / CreateContent Information @endsection
 @section('content')
@@ -40,7 +40,7 @@
 
                         <div class="form-group">
                             <label>English Description </label>
-                            <textarea class="ckeditor form-control" name="txtEngDesc"></textarea>
+                            <textarea class="ckeditor form-control" name="txtEngDesc" id="text-box"></textarea>
                         </div>
                     </div>                        
                   </div>
@@ -217,12 +217,12 @@
     </form>
 </div>
 
-<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+{{-- <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script> --}}
 
 <script type="text/javascript">
-    $(document).ready(function() {
-       $('.ckeditor').ckeditor();
-    });
+    // $(document).ready(function() {
+    //    $('.ckeditor').ckeditor();
+    // });
 
     function sync()
     {

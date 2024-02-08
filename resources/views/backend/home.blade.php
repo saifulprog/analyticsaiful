@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('backend.layouts.app')
 @section('parent') Dashboard @endsection
 @section('title') Home @endsection
 @section('content')

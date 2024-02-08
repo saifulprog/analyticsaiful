@@ -31,6 +31,7 @@ php artisan make:controller Admin/PermissionController --resource
 
 php artisan make:controller Admin/VideoCategoryController
 php artisan make:controller Backend/GenerateHTMLController
+php artisan make:controller Backend/Marketing/MarketingSetingsController --resource
 
 ROUTE
 ---------------------------------------------------------------------------------------------------------
@@ -585,3 +586,57 @@ Q2. Insecure Referrer Policy
 Q3. Content Security Policy (CSP)
     (https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
+
+
+====================================================================
+Maltipul Migration Is One File
+====================================================================
+
+<?php
+  
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+  
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('countries', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->timestamps();
+        });
+  
+        Schema::create('states', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->integer('country_id');
+            $table->timestamps();
+        });
+  
+        Schema::create('cities', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->integer('state_id'); 
+            $table->timestamps();
+        });
+    }
+  
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('countries');
+        Schema::dropIfExists('states');
+        Schema::dropIfExists('cities');
+    }
+};

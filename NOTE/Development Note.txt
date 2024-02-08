@@ -7,24 +7,31 @@ INSERT INTO `users` (`id`, `name`, `email`, `mobile`, `role_id`, `status`, `tota
 ============================================================================================================================
 REQUEST
 ============================================================================================================================
-php artisan make:request GalleryCategoryValidation
+php artisan make:request AudienceValidation
 
 ============================================================================================================================
 TABLE
 ============================================================================================================================
 php artisan make:migration create_contact_message_table --create=contact_message
+php artisan make:migration create_targeted_audience_table --create=targeted_audience
 ============================================================================================================================
 CONTROLLER
 ============================================================================================================================
 ----------------------------------------------------------------------------------------------------------------------------
 php artisan make:controller Frontend/FrontendController --resource
 php artisan make:controller UsersController --resource
+php artisan make:controller Backend/Marketing/MessageController --resource
 
 ============================================================================================================================
 MODEL
 ============================================================================================================================
 php artisan make:model Gallery -m
 php artisan make:controller ProductController --resource --model=Product
+php artisan make:model BusinesType -m
+php artisan make:model Country -m
+php artisan make:model Provinces -m
+php artisan make:model TargetedAudience
+php artisan make:model Message -m
 
 ---------------------------------------------------------------------------------------------------------
 php artisan make:migration create_gallery --create=gallery
