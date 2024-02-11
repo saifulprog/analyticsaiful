@@ -85,7 +85,30 @@ class MessageController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        try{
+            $this->validate($request, [
+                'txtTitle' => 'string|max:255|required',
+                'txtSubject' => 'string|max:255|required',
+                'txtMessage' => 'string|required'
+            ]);
+
+            Message::where('id',$id)->update([
+                'title' => $request->txtTitle,
+                'subject' => $request->txtSubject,
+                'message' => $request->txtMessage,
+                'publish' => $request->chkPublish,
+                'remember_token' => $request->_token,
+            ]);
+
+            $sMessage = 'Message information updated successfully.';
+
+        }catch(\Exception $exception){
+            $sMessage = $exception->getMessage();
+        }
+
+        $request->session()->flash('alert-warning', "$sMessage");
+
+        return redirect('message-template');
     }
 
     /**

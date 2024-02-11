@@ -2,7 +2,7 @@
 @section('title') Targeted Audience @endsection
 @section('breadcrumb') Marketing / Targeted Audience @endsection
 @section('content')
-wordpress them
+
 
 <div class="col-sm-12 col-xl-12 xl-100">
     <div class="ribbon-wrapper card">
@@ -46,11 +46,12 @@ wordpress them
                                 <th scope="row">{{ $sItem->whats_app }}</th>
                                 <th scope="row">{{ $sItem->type_name }}</th>
                                 <th scope="row">{{ $sItem->country_name }}</th>
-                                <td class="pt-4">
+                                <td scope="row">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#editModal{{ $sItem->id }}"><i class="fa fa-pencil fa-lg"></i> </a>
-                                    <a href=""><i class="fa fa-envelope fa-lg"></i> </a>
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#emailModal{{ $sItem->id }}"><i class="fa fa-envelope fa-lg"></i> </a>
                                 </td>
                             </tr>
+                            @include('backend/marketing/audience/send-email-modal')
                             @include('backend/marketing/audience/edit-audience-modal')
                             @endforeach
                             </tbody>

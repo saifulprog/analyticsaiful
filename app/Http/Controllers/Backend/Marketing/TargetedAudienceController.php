@@ -26,6 +26,7 @@ class TargetedAudienceController extends Controller
             $qBusinessTypes = DB::table('business_types')->get();
             $qCountries = DB::table('countries')->get();
             $qProvinces = DB::table('provinces')->get();
+            $qMessageTemplates = DB::table('messages')->where('publish',1)->get();
 
             $qInfo = DB::table('targeted_audience as taau')
             ->join('business_types as buty','taau.business_type_id','=','buty.id')
@@ -55,7 +56,7 @@ class TargetedAudienceController extends Controller
             $request->session()->flash('alert-warning', "$sMessage");
         }
 
-        return view('backend.marketing.audience.targeted-audience', compact('qBusinessTypes','qCountries','qItems','qProvinces'));
+        return view('backend.marketing.audience.targeted-audience', compact('qBusinessTypes','qCountries','qItems','qProvinces','qMessageTemplates'));
     }
 
     /**
@@ -199,4 +200,12 @@ class TargetedAudienceController extends Controller
         $data['cities'] = Provinces::where("country_id", $request->id)->get(["provinces_name", "id"]);                   
         return response()->json($data);
     }
+
+
+    public function fetchTemplate(Request $request)
+    {
+        $data['template'] = DB::table('messages')->where("id", $request->id)->select('subject','message')->first();                   
+        return response()->json($data);
+    }
+
 }

@@ -23,6 +23,8 @@
   </head>
   <body>
     <!-- Loader starts-->
+    <div  class="pageLoader" id="pageLoader"></div>
+    
     <div class="loader-wrapper">
       <div class="theme-loader"></div>
     </div>

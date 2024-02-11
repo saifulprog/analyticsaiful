@@ -40,7 +40,7 @@
                                 <th scope="row">{{ $sItem->title }}</th>
                                 <th scope="row">{{ $sItem->subject }}</th>
                                 <th scope="row">{{ $sItem->publish==1?'Yes':'No' }}</th>
-                                <td class="pt-4">
+                                <td scope="row">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#editModal{{ $sItem->id }}"><i class="fa fa-pencil fa-lg"></i> </a>
                                 </td>
                             </tr>

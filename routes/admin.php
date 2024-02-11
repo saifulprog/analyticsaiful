@@ -27,3 +27,6 @@ Route::resource('/message-template', App\Http\Controllers\Backend\Marketing\Mess
 
 // Cascading Dropdown
 Route::post('api/fetch-cities', [App\Http\Controllers\Backend\Marketing\TargetedAudienceController::class, 'fetchCity']);
+Route::post('api/fetch-template', [App\Http\Controllers\Backend\Marketing\TargetedAudienceController::class, 'fetchTemplate']);
+// Email
+Route::post('singale-mail/{id}', [App\Http\Controllers\Mail\SingaleMailController::class, 'singaleMail'])->name('singale-mail');

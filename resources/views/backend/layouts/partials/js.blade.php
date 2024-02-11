@@ -9,8 +9,9 @@
 <script src="{{asset('back-assets/js/bootstrap/popper.min.js')}}"></script>
 <script src="{{asset('back-assets/js/bootstrap/bootstrap.min.js')}}"></script>
 <!-- Plugins JS start-->
-<script src="{{asset('back-assets/js/editor/ckeditor/ckeditor.js')}}"></script>
-<script src="{{asset('back-assets/js/editor/ckeditor/adapters/jquery.js')}}"></script>
+{{-- <script src="{{asset('back-assets/js/editor/ckeditor/ckeditor.js')}}"></script>
+<script src="{{asset('back-assets/js/editor/ckeditor/adapters/jquery.js')}}"></script> --}}
+<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 <!-- Theme js-->
 <script src="{{asset('back-assets/js/script.js')}}"></script>
 <script src="{{asset('back-assets/js/theme-customizer/customizer.js')}}"></script>
@@ -19,6 +20,11 @@
     $(document).ready(function(){
         $(".flash-message").delay(5000).fadeOut(600);
     });
+    // CkEditor
+    $(document).ready(function() {
+       $('.ckeditor').ckeditor();
+    });
+
     // Marketing Settings
     $(document).ready(function(){
         $(".divOne").hide();
@@ -84,4 +90,40 @@
             });
         });
     });
+
+
+    $(document).ready(function () {
+        $('#txtTemplate').on('change', function () {
+            var idTempalte = this.value;
+            // Clear the txtSubject and textbox elements
+            $('#txtSubject').html('');
+            $('#message-body').html('');
+            // Send an ajax request to the URL
+            $.ajax({
+                url: '{{url('api/fetch-template')}}',
+                type: 'POST',
+                data: {
+                id: idTempalte,
+                _token: '{{csrf_token()}}'
+                },
+                dataType: 'json',
+                success: function (result) {
+                    var data = result.template;
+                    // Set the value of the txtSubject element with the data subject
+                    $('#txtSubject').val(data.subject);
+                    // Set the value of the textbox element with the data message
+                    $('#txtHidenMessage').val(data.message);
+                    $('#message-body').html(data.message);
+                }
+            });
+        });
+    });
+
+    $(window).on('beforeunload', function(){
+        $('#pageLoader').show();
+    });
+
+    $(function () {
+        $('#pageLoader').hide();
+    })
 </script>
