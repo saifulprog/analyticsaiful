@@ -22,8 +22,7 @@ class SingaleMailController extends Controller
     {
         try{
             $this->validate($request, [
-                'txtSubject' => 'string|max:255|required',
-                'txtMessage' => 'string',
+                'txtSubject' => 'required|max:255',
                 'txtHiddenEmailId' => 'required'
             ]);
 

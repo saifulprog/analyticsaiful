@@ -30960,12 +30960,15 @@ span.twitter-typeahead .tt-suggestion {
 }
 
 .pageLoader{
-  background: url("https://media3.giphy.com/media/KG4PMQ0jyimywxNt8i/giphy.gif?cid=ecf05e47uqzqe9qit5cdf4u7y9fqsw10slzt251h73nx9qri&rid=giphy.gif&ct=g") no-repeat center center;
+  background: url("../../media/icon/loading-icon.jpg") no-repeat center;
+  background-size: 200px 200px;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: 9999999;
-  background-color: #ffffff8c;
+  background-color: lightgray;
+  opacity: .7;
 }
+

@@ -9,9 +9,9 @@
 <script src="{{asset('back-assets/js/bootstrap/popper.min.js')}}"></script>
 <script src="{{asset('back-assets/js/bootstrap/bootstrap.min.js')}}"></script>
 <!-- Plugins JS start-->
-{{-- <script src="{{asset('back-assets/js/editor/ckeditor/ckeditor.js')}}"></script>
-<script src="{{asset('back-assets/js/editor/ckeditor/adapters/jquery.js')}}"></script> --}}
-<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+<script src="{{asset('back-assets/js/editor/ckeditor/ckeditor.js')}}"></script>
+<script src="{{asset('back-assets/js/editor/ckeditor/adapters/jquery.js')}}"></script>
+{{-- <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script> --}}
 <!-- Theme js-->
 <script src="{{asset('back-assets/js/script.js')}}"></script>
 <script src="{{asset('back-assets/js/theme-customizer/customizer.js')}}"></script>
@@ -21,9 +21,9 @@
         $(".flash-message").delay(5000).fadeOut(600);
     });
     // CkEditor
-    $(document).ready(function() {
-       $('.ckeditor').ckeditor();
-    });
+    // $(document).ready(function() {
+    //    $('.ckeditor').ckeditor();
+    // });
 
     // Marketing Settings
     $(document).ready(function(){

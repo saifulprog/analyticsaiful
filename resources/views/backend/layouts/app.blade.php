@@ -24,11 +24,8 @@
   <body>
     <!-- Loader starts-->
     <div  class="pageLoader" id="pageLoader"></div>
-    
-    <div class="loader-wrapper">
-      <div class="theme-loader"></div>
-    </div>
     <!-- Loader ends-->
+    
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-sidebar" id="pageWrapper">
       <!-- Page Header Start-->

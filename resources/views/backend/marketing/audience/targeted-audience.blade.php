@@ -48,7 +48,9 @@
                                 <th scope="row">{{ $sItem->country_name }}</th>
                                 <td scope="row">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#editModal{{ $sItem->id }}"><i class="fa fa-pencil fa-lg"></i> </a>
+                                    @if(!empty($sItem->email))
                                     <a href="" data-bs-toggle="modal" data-bs-target="#emailModal{{ $sItem->id }}"><i class="fa fa-envelope fa-lg"></i> </a>
+                                    @endif
                                 </td>
                             </tr>
                             @include('backend/marketing/audience/send-email-modal')

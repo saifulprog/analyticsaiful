@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Compose Email</h5>
+            <h5 class="modal-title" id="staticBackdropLabel">New Message</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form method="POST" action="{{ route('singale-mail',$sItem->id) }}" enctype="multipart/form-data">
@@ -35,12 +35,24 @@
                             <label class="text-secondary">Subject</label>
                             <input type="hidden" name="txtHiddenEmailId" value="{{ $sItem->email }}">
                             <input type="text" name="txtSubject" id="txtSubject" class="form-control" max="255" required>
+
+                            @if ($errors->has('txtSubject'))
+                                <span class="help-block text-danger">
+                                <strong>{{ $errors->first('txtSubject') }}</strong>
+                                </span>
+                            @endif
                         </div>
         
                         <div class="col-sm-12">
                             <label class="text-secondary">Message</label>
                             <input type="hidden" name="txtHidenMessage" id="txtHidenMessage" value="">
                             <textarea name="txtMessage" class="ckeditor form-control" id="textbox" required></textarea>
+
+                            @if ($errors->has('txtMessage'))
+                                <span class="help-block text-danger">
+                                <strong>{{ $errors->first('txtMessage') }}</strong>
+                                </span>
+                            @endif
                         </div>
                     </div>
                 </div>
