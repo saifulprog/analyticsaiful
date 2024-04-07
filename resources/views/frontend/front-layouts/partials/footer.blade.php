@@ -6,8 +6,7 @@
                 &copy; <a class="border-bottom text-secondary" href="">analiticsaiful.com</a>, All Right Reserved.
             </div>
             <div class="col-md-6 text-center text-md-end text-black">
-                Designed By <a class="text-black" href="" target="_blank" rel="nofollow">HTML Codex</a>
-                | Distributed By: <a class="text-black" href="" target="_blank" rel="nofollow">ThemeWagon</a>
+                
             </div>
         </div>
     </div>

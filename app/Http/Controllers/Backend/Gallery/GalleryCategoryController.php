@@ -35,7 +35,7 @@ class GalleryCategoryController extends Controller
         $qCategorys = $qItems->where('is_parent',0);
 
 
-        return view('backend.website.category.gallery-category', compact('qParentCategorys','qItems','qCategorys'));
+        return view('backend.website.gallery.gallery-category', compact('qParentCategorys','qItems','qCategorys'));
     }
 
     /**

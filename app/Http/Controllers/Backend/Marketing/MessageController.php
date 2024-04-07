@@ -20,7 +20,7 @@ class MessageController extends Controller
     public function index()
     {
         // Gate::authorize('users-edit');
-        $qItems = Message::paginate(22);
+        $qItems = Message::paginate(15);
         
         return view('backend.marketing.message-template.message-template', compact('qItems'));
     }

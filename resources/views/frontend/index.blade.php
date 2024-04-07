@@ -1,6 +1,6 @@
 @extends('frontend/front-layouts.front-app')
 @section('title')Best Web Analytics Expert in Bangladesh - Mohammad Saiful Islam @endsection
-@section('keyword')Analytic Saiful, Mohammad Saiful Islam, Web Analytics Expert, Best Web Analytics Expert, Web Analytics Expert in Bangladesh, Email Marketing Expart, Klaviyo Expart, Mailchimp Expart, K Digital Marketing and Web Developing Service in bangladesh, Facebook Marketing Expart, Instragram Marketing Expart, Youtube Ads Marketing, Organic SEO Expert @endsection
+@section('keyword')Analytic Saiful, Mohammad Saiful Islam, Web Analytics Expert, Best Web Analytics Expert, Web Analytics Expert in Bangladesh, Email Marketing Expart, Klaviyo Expart, Mailchimp Expart, K Digital Marketing and Web Developing Service in bangladesh, Facebook Marketing Expart, Instragram Marketing Expart, Youtube Ads Marketing, Organic SEO Expert, Marketing Professional @endsection
 @section('description')Boost your business performance by using my expertise in web development and digital marketing, offering 13+ years of experience in web development and data driving business growth &amp; success.@endsection
 
 @section('content')
@@ -11,10 +11,9 @@
             <div class="col-lg-6 py-6 pb-0 pt-lg-0">
                 <h3 class="text-primary mb-3">I'm</h3>
                 <h2 class="display-3 mb-3">Mohammad Saiful Islam</h2>
-                <h2 class="typed-text-output d-inline"></h2>
-                <div class="typed-text d-none">
-                    <h1>I'm a web developer and marketer who uses data and SEO to grow businesses</h1>
-                </div>
+                                
+                <h1 class="h4">As a web analytics and marketing professional, I use data and SEO to increase businesses.</h1>
+                
                 <p>Are you ready to take your business to the next level? Do you want to increase your sales and profits while saving money on your ads? If yes, you are in the right place. I can boost your business performance by using my expertise in web development and digital marketing. Contact me today and let's get started.</p>
                 <div class="d-flex align-items-center pt-5">
                     <a href="" class="btn btn-primary py-3 px-4 me-5" title="Hire Me" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Hire Me </a>
@@ -396,9 +395,6 @@
         <div class="row g-5">
             <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <address>
-                <p class="mb-2">My office:</p>
-                <h3 class="h6 fw-bold">Mirpur-1,Dhaka-1216, Bngladesh</h3>
-                <hr class="w-100">
                 <p class="mb-2">Call me:</p>
                 <h3 class="h6 fw-bold"><a href="https://api.whatsapp.com/send?phone=8801814957460" title="Mohammad Saiful Islam Phone Number & WhatsApp">+880 1814957460 <i class="fab fa-whatsapp text-success"></i></a></h3>
                 <h3 class="h6 fw-bold"><a href="skype:shesherbd?chat" title="Mohammad Saiful Islam Skype User">shesherbd <i class="fab fa-skype text-primary"></i></a></h3>
