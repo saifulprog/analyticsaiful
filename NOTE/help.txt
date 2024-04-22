@@ -4,7 +4,7 @@ git init
 
 git add .
 
-git commit -m "Marketing Audiance Section"
+git commit -m "My Work Update with email portfolio"
 
 git branch -M main
 

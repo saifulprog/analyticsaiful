@@ -75,8 +75,8 @@ class ContentsController extends Controller
         $iSize = $this->imageSize($request->cmbCatID);
 
         if(!empty($request->file('fImage'))){
-            $sBigFilePath = $this->imageUpload($request->file('fImage'), $iSize->big_img_height,$iSize->big_img_width,'media/post/big-image/');
-            $sSmallFilePath = $this->imageUpload($request->file('fImage'), $iSize->small_img_height,$iSize->small_img_width,'media/post/small-image/');
+            $sBigFilePath = $this->imageUpload($request->file('fImage'), $iSize->big_img_height,$iSize->big_img_width,'/media/post/big-image/');
+            $sSmallFilePath = $this->imageUpload($request->file('fImage'), $iSize->small_img_height,$iSize->small_img_width,'/media/post/small-image/');
         }elseif(!empty($request->file('fPDF'))){
             $sPdfFilePath = $this->fileUpload($request->file('fPDF'),'media');
         }
@@ -155,8 +155,8 @@ class ContentsController extends Controller
 
         //return $request->file('fImage');
         if(!empty($request->file('fImage'))){
-            $sBigFilePath = $this->imageUpload($request->file('fImage'), $iSize->big_img_height,$iSize->big_img_width,'media/post/big-image/');
-            $sSmallFilePath = $this->imageUpload($request->file('fImage'), $iSize->small_img_height,$iSize->small_img_width,'media/post/small-image/');
+            $sBigFilePath = $this->imageUpload($request->file('fImage'), $iSize->big_img_height,$iSize->big_img_width,'/media/post/big-image/');
+            $sSmallFilePath = $this->imageUpload($request->file('fImage'), $iSize->small_img_height,$iSize->small_img_width,'/media/post/small-image/');
         }else{
             $sBigFilePath = $request->fBigImage;
             $sSmallFilePath = $request->fSmallImage;

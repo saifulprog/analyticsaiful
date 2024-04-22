@@ -32,7 +32,7 @@
                         <h1 class="blog-title">{{ $sItem->eng_title }}</h1>
 
                         <small class="text-secondary">{{ date('d M, Y', strtotime($sItem->created_at)) }} | {{ $sItem->cat_name }} | {{ $sItem->total_hits }} views</small>
-                        
+                        <br><br>
                         @php
                             echo $sItem->eng_details;
                         @endphp

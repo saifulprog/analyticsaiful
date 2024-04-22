@@ -31,6 +31,11 @@
                     <input type="text" name="txtSubject" class="form-control" max="255" required>
                 </div>
 
+                <div class="col-sm-12 mb-2">
+                    <label class="text-secondary">Attachment</label>
+                    <input type="file" name="txtAttachment" class="form-control" data-max-size="5120" accept=".jpeg, .jpg, .png, .webp">
+                </div>
+
                 <div class="col-sm-12">
                     <label class="text-secondary">Message</label>
                     <textarea name="txtMessage" class="ckeditor form-control" id="text-box" required></textarea>
