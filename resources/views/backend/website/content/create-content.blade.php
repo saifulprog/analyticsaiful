@@ -31,7 +31,7 @@
 
                         <div class="form-group">
                             <label for="name">Content English Brief <small class="text-secondary">(Please write a title under 255 characters)</small></label>
-                            <textarea class="form-control" name="txtEngBrief" rows="5" maxlength="255"></textarea>
+                            <textarea class="form-control" name="txtEngBrief" rows="5" maxlength="255" required></textarea>
                                                     
                             @error('txtEngBrief')
                             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>

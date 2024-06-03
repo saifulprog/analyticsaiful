@@ -19,11 +19,11 @@ class CategoryController extends Controller
     {
         Gate::authorize('content-category-show');
 
-        $qQuery = DB::table('categories');
-        $qItems = $qQuery->groupBy('id','parent_id')->get();
-        $qParentCategorys = $qQuery->where('is_parent',1)->get();
+        //$qQuery = DB::table('categories');
+        $qItems = DB::table('categories')->get();
+        //$qParentCategorys = $qQuery->where('is_parent',1)->get();
 
-        return view('backend.website.category.content-category', compact('qParentCategorys','qItems'));
+        return view('backend.website.category.content-category', compact('qItems'));
     }
 
     /**

@@ -32,7 +32,7 @@
 
                         <div class="form-group">
                             <label for="name">Content English Brief <small class="text-secondary">(Please write a title under 255 characters)</small></label>
-                            <textarea class="form-control" name="txtEngBrief" rows="5" maxlength="255">{{ $sItem->eng_brief }}</textarea>
+                            <textarea class="form-control" name="txtEngBrief" rows="5" maxlength="255" required>{{ $sItem->eng_brief }}</textarea>
                                                     
                             @error('txtEngBrief')
                             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>

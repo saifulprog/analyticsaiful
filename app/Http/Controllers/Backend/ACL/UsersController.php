@@ -45,7 +45,7 @@ class UsersController extends Controller
         DB::table('users')->insert([
           'name' => $request->txtName,
           'email' => $request->txtEmail,
-          'password' => Hash::make($request->password),
+          'password' => Hash::make($request->txtPassword),
           'mobile' => $request->txtMobile,
           'role_id' => $request->cmbRole,
           'file_path' => $sFilePath,
@@ -87,7 +87,7 @@ class UsersController extends Controller
           'mobile' => $request->txtMobile,
           'role_id' => $request->cmbRole,
           'file_path' => $sFilePath,
-          'password' => !empty($request->password)?Hash::make($request->password):$request->txtOldPassword,
+          'password' => !empty($request->txtPassword)?Hash::make($request->txtPassword):$request->txtOldPassword,
           'remember_token' => $request->_token,
           'updated_at' => date('Y-m-d H:i:s'),
         ]);

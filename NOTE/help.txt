@@ -4,7 +4,7 @@ git init
 
 git add .
 
-git commit -m "My Work Update with email portfolio"
+git commit -m "Live content category open problem solved"
 
 git branch -M main
 
